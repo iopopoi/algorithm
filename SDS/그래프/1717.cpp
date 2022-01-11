@@ -36,6 +36,7 @@ void Union(int A, int B){
 
 int main(){
     cin.tie(0); cout.tie(0); 
+    ios_base::sync_with_stdio(0);
     cin >> N >> M;
 
     // 처음에는 모든 부모노드를 자기 자신으로 초기화한다.
