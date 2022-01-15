@@ -45,14 +45,6 @@ int main(){
         }
     }
 
-    // for(int i=0;i<N;i++){
-    //     for(int j = 0; j < M; j++){
-    //         if(arr[i][j] == 0){
-    //             cout << -1;
-    //             return 0;
-    //         }
-    //     }
-    // }
     if(cnt == N*M) cout << t;
     else cout << -1;
 
