@@ -1,3 +1,9 @@
+/*
+    BOJ.12865 평범함 배낭
+
+    사용한 알고리즘
+    - DP, 분할정복
+*/
 #include <iostream>
 #include <algorithm>
 #include <cstring>
@@ -5,7 +11,7 @@
 using namespace std;
 
 int N, K;
-int dp[101][100001]; // i ~ N까지 물건을 들때 최대 무게, 가치
+int dp[101][100001]; // j의 무게로 i ~ N까지 물건을 들으려 할때 최대 가중치
 int arr[101][2]; // i번 물건의 무게, 가치
 
 // n ~ N까지 k의 무게로 들수 있는 max값 반환
@@ -29,6 +35,6 @@ int main(){
 
     memset(dp, -1,sizeof(dp));
 
-    // dfs(i, K) : i ~ N의 조건을 충족하는 값 반환 , 남은 무게
+    // dfs(i, K) : K개의 무개로 i ~ N의 물건을 담으려할때 최대 가중치
     cout << dfs(1, K); 
 }
